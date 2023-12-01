@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="index.css">
+      
+</head>
+<body>
+    <div class="score">
+        <div class="RPS">
+       ROCK <br>
+       PAPER<br>
+       SCISSORS<br>
+        </div>
+        <div class="red">
+        <div class="c-score">
+          COMPUTER<br>
+          SCORE<br>
+          <div class="number" id="c-number">0</div>
+    
+        </div>
+        <div class="h-score">
+          YOUR<br>
+          SCORE<br>
+          <div class="number" id="y-number">0</div>
+    
+        </div>
+        </div>
+      </div>
+      
+        <div class="images">
+          <button class="img-btn" data-choice="rock">
+           <div class="pick rock">
+            <img class="right-image" src="rock.png" alt="">
+           </div>
+          </button>
+          <button class="img-btn" data-choice="scissor">
+            <div class="pick scissor">
+          <img class="left-image" src="scissor.png" alt="">
+            </div>
+          </button>
+          <button class="img-btn" data-choice="paper">
+        <div class="pick paper">
+         <img class="bottom-image" src="paper.png" alt="">
+        </div>
+          </button>
+    
+        </div>
+        
+      </div>
+      <div class="results hidden">
+          <h2 class="results-heading">YOU PICKED</h2>
+          <h2 class="results-heading">PC PICKED</h2>
+          <div class="final-result"></div>
+          <div class="results-winner hidden">
+            <h3 class="results-text"></h3>
+              <button class="play-again">play again</button>
+            
+          </div>
+          <div class="final-result"></div>
+      </div>
+      <div>
+      <button class="rules"  id="rules-button">RULES</button>
+      <button class="next-btn hidden">NEXT</button>
+ <div id="rules-modal" class="hidden">
+  <div class="modal-header">
+    <h3>Game Rules</h3>
+    <button id="close-button">X</button>
+  </div>
+  <div class="modal-body">
+    <p>Rock beats scissors, scissors beats paper, and paper beats rock.</p>
+    <p>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</p>
+    <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</p>
+    <p>If both players lay down the same hand, each player lays down another hand.</p>
+  </div>
+</div>    
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
